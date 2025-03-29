@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <form action="../index.html" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" size="60" required></p>
+            <p>Email: <input type="email" required></p>
+            <p>Telefone: <input type="tel" placeholder="(00)00000-0000" maxlength="11"></p>
+            <p>Data de nascimento: <input type="date"></p>
+        </fieldset>
+        <fieldset>
+            <legend>Avaliação</legend>
+            <p> Ferramenta:
+                <select name="ferramenta" id="ferramenta">
+                    <option value=""></option>
+                    <option value="Martelo">Martelo</option>
+                    <option value="Chave_de_fenda">Chave de fenda</option>
+                    <option value="Chave_phillips">Chave phillips</option>
+                    <option value="Maquita">Maquita</option>
+                    <option value="Furadeira">Furadeira</option>
+                </select>
+            </p>
+            <p>
+                <input type="text" placeholder="Marca">
+            </p>
+            <p>Avaliação:
+                <br>
+                <input type="radio" name="Nota"> Muito Ruim
+                <br>
+                <input type="radio" name="Nota"> Ruim
+                <br>
+                <input type="radio" name="Nota"> Aceitavel
+                <br>
+                <input type="radio" name="Nota"> Bom
+                <br>
+                <input type="radio" name="Nota"> Muito bom
+            </p>
+            <p>
+                <input type="checkbox" name="Confirmar">
+                Recomendo para outro cliente
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Comentario:</legend>
+            <textarea name="Comentarios" id="Comentarios" rows="10" cols="30"></textarea>
+        </fieldset>
+        <input class="btn_form" type="submit">
+        <input class="btn_form" type="reset">
+    </form>
+</body>
+
+</html>
