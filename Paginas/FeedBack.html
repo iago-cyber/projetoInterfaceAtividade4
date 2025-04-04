@@ -1,15 +1,28 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt_BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../style.css">
-    <title>Formulario</title>
+    <title>FeedBack</title>
 </head>
 
 <body>
-    <form action="../index.html" method="post">
+    <header>
+        <a href="../index.html"><img id="logo" src="../Imagens/Logo_HubFerramentas.png"
+                alt="Um martelo e uma chave de fenda cruzados escrito embaixo hub ferramentas ferramentas multisetor"
+                title="logo da loja"></a>
+        <nav>
+            <ul id="menu">
+                <li><a href="../Paginas/Produtos.html">Produtos</a></li>
+                <li><a href="../Paginas/Testes.html">Testes</a></li>
+                <li><a href="../Paginas/Precos.html">Preços</a></li>
+                <li><a href="../Paginas/FeedBack.html">FeedBack</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="feedback" action="../index.html" method="post">
         <fieldset>
             <legend>Dados Pessoais</legend>
             <p>Nome: <input type="text" name="nome" placeholder="Escreva seu nome" size="60" required></p>
@@ -56,6 +69,55 @@
         <input class="btn_form" type="submit">
         <input class="btn_form" type="reset">
     </form>
+    <footer>
+        <section>
+            <ul>
+                <li>
+                    <p>Ajuda:</p>
+                </li>
+                <li><a href="../Paginas/Ajuda.html">Duvidas</a></li>
+                <li><a href="../Paginas/Ajuda.html#Entregas">Entregas</a></li>
+                <li><a href="../Paginas/Ajuda.html#Pagamentos">Pagamentos</a></li>
+                <li><a href="../Paginas/Ajuda.html#Devolucoes">Devoluções</a></li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <p>Redes Sociais:</p></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/iagoaasantos/" target="_blank">
+                        <img src="../Imagens/instagram.png" alt="logo do instagram" title="Instagram" class="logo_rede">
+                    </a>
+                    <a href="https://www.linkedin.com/in/iago-santos-57058719b/" target="_blank">
+                        <img src="../Imagens/linkedin.png" alt="logo do linkedin" title="Linkedin" class="logo_rede">
+                    </a>
+                    <a href="https://www.youtube.com/@iprototype10" target="_blank">
+                        <img src="../Imagens/youtube.png" alt="logo do youtube" title="outube" class="logo_rede">
+                    </a>
+                </li>
+                <!-- icones baixados do flaticon -->
+                <li>
+                    <p class="fonte_imagem">Imagens: flaticon</p>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <ul>
+                <li>
+                    <p>Precisa trabalhar?</p>
+                </li>
+                <li>
+                    <a href="../Paginas/TrabalheConosco.html">Trabalhe conosco</a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section id="creditos">
+            <p id="p_credito">©2025 iago Santos. Nenhum direito reservado.</p>
+        </section>
+    </footer>
 </body>
 
 </html>
